@@ -7,6 +7,7 @@ kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
 $ ssh-keygen -t rsa
 ``` 
 
+```
 Generating public/private rsa key pair.
 Enter file in which to save the key (/c/Users/kella/.ssh/id_rsa):
 Created directory '/c/Users/kella/.ssh'.
@@ -39,14 +40,13 @@ The key's randomart image is:
 |+ . o + .o       |
 |       . ..      |
 +----[SHA256]-----+
+```
 
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
-$ more /c/Users/kella/.ssh/id_rsa.pub
-bash: more: command not found
+     
+     $ less /c/Users/kella/.ssh/id_rsa.pub
 
-kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
-$ less /c/Users/kella/.ssh/id_rsa.pub
-
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
 $ git clone git@github.com:KscheiberAI/best-repo-ever.git
 Cloning into 'best-repo-ever'...
@@ -58,18 +58,30 @@ remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
+```
 
+### Now run git status
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
 $ git status
 fatal: not a git repository (or any of the parent directories): .git
+```
 
+### Now run ls
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
 $ ls
 best-repo-ever  trainingGitHubWS.code-workspace
+```
 
+### Now change directory cd to file to be worked
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub
 $ cd best-repo-ever
+```
 
+### Now run git status
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git status
 On branch master
@@ -82,12 +94,18 @@ Changes not staged for commit:
         modified:   README.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
+```
 
+### Now run commit command
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git commit -am "first commit"
 [master 4b44785] first commit
  1 file changed, 3 insertions(+), 1 deletion(-)
+```
 
+### Now run git status
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git status
 On branch master
@@ -95,7 +113,10 @@ Your branch is ahead of 'origin/master' by 1 commit.
   (use "git push" to publish your local commits)
 
 nothing to commit, working tree clean
+```
 
+### Now run git log
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git log
 commit 4b44785f3be76748c2e820921610ffac5bcf1e75 (HEAD -> master)
@@ -109,7 +130,10 @@ Author: KscheiberAI <52077417+KscheiberAI@users.noreply.github.com>
 Date:   Mon Jun 24 09:56:30 2019 -0400
 
     Initial commit
+```
 
+### Now run git remote
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git remote
 origin
@@ -138,7 +162,10 @@ kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git remote -v
 origin  git@github.com:KscheiberAI/best-repo-ever.git (fetch)
 origin  git@github.com:KscheiberAI/best-repo-ever.git (push)
+```
 
+### Now run git push
+```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git push origin master:master
 Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
@@ -148,6 +175,11 @@ Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To github.com:KscheiberAI/best-repo-ever.git
    ae5379d..4b44785  master -> master
+```
 
-kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
-$
+---
+## Appendix
+
+### Reference Links
+
+* [markdown cheat sheet](https://guides.github.com/features/mastering-markdown/)
