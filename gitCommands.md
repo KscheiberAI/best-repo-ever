@@ -104,7 +104,7 @@ $ git commit -am "first commit"
  1 file changed, 3 insertions(+), 1 deletion(-)
 ```
 
-### Now run git status
+### Now run git status change test
 ```
 kella@DESKTOP-D0N6VOQ MINGW64 ~/Documents/TrainingGitHub/best-repo-ever (master)
 $ git status
